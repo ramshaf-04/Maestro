@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro | Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+        <h1 class="logo">Maestro</h1>
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">🛒</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container page">
+
+    <h2>Checkout</h2>
+
+    <div class="checkout-container">
+
+    <div class="checkout-form">
+
+    <h3>Billing Details</h3>
+
+    <form id="checkoutForm">
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Phone Number" required>
+
+    <input type="text" placeholder="Address" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="Postal Code" required>
+
+    <div class="payment-method">
+
+    <h2>Payment Method</h2>
+
+    <label class="payment-option">
+    <input type="radio" name="payment" checked>
+    <span>Credit Card</span>
+    </label>
+
+    <label class="payment-option">
+    <input type="radio" name="payment">
+    <span>Cash on Delivery</span>
+    </label>
+
+    </div>
+
+    <div id="cardDetails">
+
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="Bank Name">
+
+    </div>
+
+    <button type="submit" class="place-order-btn">
+    Place Order
+    </button>
+
+    </form>
+
+    </div>
+
+    <!-- RIGHT: SUMMARY -->
+    <div class="order-summary">
+
+    <h3>Your Order</h3>
+
+    <div id="orderItems">
+    <!-- Items from cart will be injected here -->
+    </div>
+
+    <hr>
+
+    <div class="summary-item">
+    <span>Subtotal</span>
+    <span id="subtotal">$0</span>
+    </div>
+
+    <div class="summary-item">
+    <span>Shipping</span>
+    <span id="shipping">$10</span>
+    </div>
+
+    <h4 class="total">
+    Total: <span id="total">$0</span>
+    </h4>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <footer>
+    <p>© 2026 Maestro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
